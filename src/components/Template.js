@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-//import logo from '../logo.svg';
+// import logo from '../logo.svg';
 import background from './background2.jpeg';
-import './index.css';
+import './styles.css';
 import Header from '../shared/header/Header';
 
 
@@ -20,9 +20,9 @@ class Index extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="container">
         <Header />
-        <div className="content">
+        <div>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/skills" component={SkillsPage} />
