@@ -1,0 +1,38 @@
+.navBar{
+    color: white !important;
+    background: #000 !important;
+}
+.popup{
+    color: white !important;
+    background: #000 !important;
+    top: 64px !important;
+    left: 0 !important;
+    border-radius: 0px;
+}
+
+.menuItems a{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/*.links{
+    color: #fff !important;
+    text-decoration: none;
+}*/
+.menuItems:hover{
+    background:  rgba(216, 177, 49,0.95) !important;
+}
+.logo{
+    background: -webkit-linear-gradient(rgba(216, 177, 49, 1), rgba(216, 177, 49, 0.55));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+.logo:hover{
+    background: -webkit-linear-gradient(rgba(216, 177, 49, 1), rgba(216, 177, 49, 0.95));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}

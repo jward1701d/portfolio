@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 // import logo from '../logo.svg';
-import background from './background2.jpeg';
+//import background from './background2.jpeg';
 import './styles.css';
 import Header from '../shared/header/Header';
 
@@ -17,21 +17,23 @@ const style = {
   background: 'url('+background+') no-repeat center center fixed',
 }
 */
+
+
 class Index extends Component {
   render() {
     return (
       <Router>
-        <MuiThemeProvider>
-        <div className="container">
-        <Header />
         <div>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/about" component={AboutPage} />
-          <Route exact path="/skills" component={SkillsPage} />
-          <Route exact path="/projects" component={ProjectsPage} />
-          </div>
-        </div>
+          <Header />
+          <MuiThemeProvider>
+            <div>
+              <Route exact path="/" component={HomePage} />
+              <Route exact path="/about" component={AboutPage} />
+              <Route exact path="/skills" component={SkillsPage} />
+              <Route exact path="/projects" component={ProjectsPage} />
+            </div>
         </MuiThemeProvider>
+        </div>
       </Router>
     );
   }
