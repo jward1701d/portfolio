@@ -7,20 +7,23 @@ import MenuItem from 'material-ui/MenuItem';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FontAwesome from 'react-fontawesome';
 
+import IconMenu from 'material-ui/IconMenu';
+import IconButton from 'material-ui/IconButton';
+
 import './header.css';
 
 const styles = {
     title: {
         cursor: 'pointer'
-    },
-    links:{
+    }
+   /* links:{
         textDecoration:'none',
         color: '#fff',
         background: '-webkit-linear-gradient(rgba(216, 177, 49, 1), rgba(216, 177, 49, 0.55))',
         backgroundClip: 'text',
         webkitBackgroundClip: 'text',
         webkitTextFillColor: 'transparent'
-    }
+    }*/
 };
 
 export default class Header extends Component {
