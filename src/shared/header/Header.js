@@ -1,105 +1,114 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import AppBar from 'material-ui/AppBar';
-import Popover, {PopoverAnimationVertical} from 'material-ui/Popover';
-import Menu from 'material-ui/Menu';
-import MenuItem from 'material-ui/MenuItem';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import FontAwesome from 'react-fontawesome';
 
-import IconMenu from 'material-ui/IconMenu';
+import PropTypes from 'prop-types';
+import { withStyles } from 'material-ui/styles';
+import AppBar from 'material-ui/AppBar';
+import Toolbar from 'material-ui/Toolbar';
+import Typography from 'material-ui/Typography';
 import IconButton from 'material-ui/IconButton';
+import Drawer from 'material-ui/Drawer';
+import List from 'material-ui/List';
+import MenuIcon from 'material-ui-icons/Menu';
+
+import {menuList} from './MenuList'
 
 import './header.css';
 
 const styles = {
-    title: {
-        cursor: 'pointer'
-    }
-   /* links:{
-        textDecoration:'none',
+    navbar: {
+        background: '#000',
         color: '#fff',
-        background: '-webkit-linear-gradient(rgba(216, 177, 49, 1), rgba(216, 177, 49, 0.55))',
-        backgroundClip: 'text',
-        webkitBackgroundClip: 'text',
-        webkitTextFillColor: 'transparent'
-    }*/
+        borderBottom: 'rgba(216, 177, 49, 1) solid 2px',
+    },
+    menuButton: {
+        color: 'rgba(216, 177, 49,0.75)',
+        fontSize: '30px',
+        '&:hover':{
+            color: 'rgba(216, 177, 49,0.95)'
+        },
+    },
+    iconButtons:{
+        color: 'rgba(216, 177, 49,0.75)',
+        '&:hover':{
+            color: 'rgba(216, 177, 49,0.95)'
+        },
+    },
+    flex: {
+        flex: 1,
+    },
+    list: {
+        width: 150,
+        background: '#000',
+    },
 };
 
-export default class Header extends Component {
+class Header extends Component {
     constructor(props){
         super(props);
-     this.handleClick = this.handleClick.bind(this);
-     this.handleRequestClose = this.handleRequestClose.bind(this);
+        this.state = {
+            left: false,
+          };
 
-     this.state = {
-        open: false,
-     };
+        this.toggleDrawer = this.toggleDrawer.bind(this);
     }
     
-    handleClick(e){
-        e.preventDefault();
+    toggleDrawer = (open) => () => {
         this.setState({
-            open: true,
-            anchorEl: e.currentTarget,
+            left: open,
         });
-    }  
-    handleRequestClose = () => {
-        this.setState({
-          open: false,
-        });
-      };
+    };
 
     render() {
-        return (
-            <MuiThemeProvider>
-                <div>
-                <AppBar
-                    className="navBar"
-                    title={
-                        <span style={styles.title}>
-                        <Link to="/" className="logo">James O Ward.com</Link></span>
-                    }
-                    onLeftIconButtonClick={this.handleClick}
-                    />
-                    <Popover
-                        open={this.state.open}
-                        anchorEl={this.state.anchorEl}
-                        anchorOrigin={{horizontal: 'left', vertical: 'bottom'}}
-                        targetOrigin={{horizontal: 'left', vertical: 'top'}}
-                        onRequestClose={this.handleRequestClose}
-                        animation={PopoverAnimationVertical}
-                        className="popup"
-                    >
-                        <Menu>
-                            <MenuItem className="menuItems">
-                                <Link to="/">
-                                    <FontAwesome name="home"/>
-                                    <span> Home</span>
-                                </Link>
-                            </MenuItem>
-                            <MenuItem className="menuItems">
-                                <Link to="/about">
-                                    <FontAwesome name="eye"/>
-                                    <span> About</span>
-                                </Link>
-                            </MenuItem>
-                            <MenuItem className="menuItems">
-                                <Link to="/skills">
-                                    <FontAwesome name="code"/>
-                                    <span> Skills</span>
-                                </Link>
-                            </MenuItem>
-                            <MenuItem className="menuItems">
-                                <Link to="/projects">
-                                    <FontAwesome name="folder"/>
-                                    <span> Projects</span>
-                                </Link>
-                            </MenuItem>
-                        </Menu>
-                    </Popover>
-                    </div>
-            </MuiThemeProvider>
+        const {classes } =this.props;
+
+        const navList =(
+            <div className="list">
+            <List>{menuList}</List> 
+            </div>
+        )
+        return(
+            <div>
+                <AppBar position="static" className={classes.navbar}>
+                    <Toolbar>
+                        <IconButton onClick={this.toggleDrawer(true)} className={classes.menuButton}>
+                            <MenuIcon />
+                        </IconButton>
+                        <Drawer open={this.state.left} onClose={this.toggleDrawer(false)}>
+                            <div
+                                tabIndex={0}
+                                role="button"
+                                onClick={this.toggleDrawer(false)}
+                                onKeyDown={this.toggleDrawer(false)}
+                            >
+                                <div className="drawerHeader">
+                                   <span className="drawerTitle">Menu</span>
+                                </div>
+                                {navList}
+                            </div>
+                        </Drawer>
+                        <Typography variant="title" color="inherit" className={classes.flex}>
+                            <Link className="logo" to='/'> JamesOWard.com</Link>
+                        </Typography>
+                        <IconButton>
+                            <Link className={classes.iconButtons} target="_blank" to='https://www.linkedin.com/in/jward1701d/'>
+                                <i className="fab fa-linkedin-in"/>
+                            </Link>
+                        </IconButton>
+                        <IconButton>
+                            <Link className={classes.iconButtons} target="_blank" to='https://github.com/jward1701d'>
+                                <i className="fab fa-github"/>
+                            </Link>
+                        </IconButton>
+                    </Toolbar>
+                </AppBar>
+            </div>    
         );
     }
 }
+
+Header.propTypes = {
+    classes: PropTypes.object.isRequired,
+  };
+
+export default withStyles(styles)(Header);
