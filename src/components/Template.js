@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 //import background from './background2.jpeg';
 import './styles.css';
 import Header from '../shared/header/Header';
+import Footer from '../shared/footer/Footer';
 
 
 
@@ -22,7 +23,7 @@ class Index extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div >
           <Header />
             <div>
               <Route exact path="/" component={HomePage} />
@@ -30,6 +31,7 @@ class Index extends Component {
               <Route exact path="/skills" component={SkillsPage} />
               <Route exact path="/projects" component={ProjectsPage} />
             </div>
+            <Footer />
         </div>
       </Router>
     );

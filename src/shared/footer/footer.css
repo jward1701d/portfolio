@@ -1,0 +1,15 @@
+.footer{
+    width: 100%;
+    height: 30px;
+    background: rgba(0,0,0,0.85);
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;    
+    border-top: rgba(216, 177, 49, 1) solid 2px;
+}
+.copywright{
+   position: relative;
+   color: rgba(216, 177, 49, 0.75);
+   top: 5px;
+}

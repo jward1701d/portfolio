@@ -1,6 +1,6 @@
 .navBar{
     color: white !important;
-    background: #000 !important;
+    background: rgba(0,0,0,0.85) !important;
 }
 
 .icons{
@@ -9,9 +9,6 @@
 }
 .icons:hover{
    color:  rgba(216, 177, 49,0.95) !important;
-}
-.MuiPopover-paper-78 ul li:hover{
-    background:  rgba(216, 177, 49,0.95) !important;
 }
 .logo{
     font-size: 20px;
@@ -29,7 +26,6 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .drawerHeader{
     height: 64px;
     background: #000;
@@ -41,5 +37,4 @@
     position: relative;
     top: 20px;
     font-size: 1.25em;
-    
 }

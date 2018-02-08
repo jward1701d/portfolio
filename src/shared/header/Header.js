@@ -17,7 +17,7 @@ import './header.css';
 
 const styles = {
     navbar: {
-        background: '#000',
+        background: 'rgba(0,0,0,0.85)',
         color: '#fff',
         borderBottom: 'rgba(216, 177, 49, 1) solid 2px',
     },
@@ -68,8 +68,8 @@ class Header extends Component {
             </div>
         )
         return(
-            <div>
-                <AppBar position="static" className={classes.navbar}>
+          
+                <AppBar position="sticky" className={classes.navbar}>
                     <Toolbar>
                         <IconButton onClick={this.toggleDrawer(true)} className={classes.menuButton}>
                             <MenuIcon />
@@ -88,7 +88,7 @@ class Header extends Component {
                             </div>
                         </Drawer>
                         <Typography variant="title" color="inherit" className={classes.flex}>
-                            <Link className="logo" to='/'> JamesOWard.com</Link>
+                            <Link className="logo" to='/'> James O Ward.com</Link>
                         </Typography>
                         <IconButton>
                             <Link className={classes.iconButtons} target="_blank" to='https://www.linkedin.com/in/jward1701d/'>
@@ -102,7 +102,7 @@ class Header extends Component {
                         </IconButton>
                     </Toolbar>
                 </AppBar>
-            </div>    
+              
         );
     }
 }
