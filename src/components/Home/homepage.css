@@ -1,6 +1,5 @@
 .homeContainer{
     position: relative;
-    top: 64px;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2,1fr);
@@ -22,4 +21,6 @@
 }
 .right img{
     border-radius: 25px;
+    border: rgba(216, 177, 49, 0.90) solid 2px;
+    box-shadow: 10px 20px #000 ;
 }

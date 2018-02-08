@@ -11,7 +11,10 @@ export default function ProjectsPage() {
         <Typography variant="headline" component="h1" className="mainTitle">
           Projects
         </Typography>
-        <div className="innerContainer">
+        <div className="">
+        <Typography component="p" style={{color: 'rgba(216, 177, 49, 0.90)'}} >
+          Comming soon
+        </Typography>
         </div>
       </Paper>
     </div>
