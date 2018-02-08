@@ -7,7 +7,7 @@ const photo = require('./selfie1.JPG');
 class HomePage extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="homeContainer">
         <div className="left">
           <h1>James  Ward</h1>
           <h3>- Web developer</h3>
