@@ -1,4 +1,4 @@
-.aboutContainer{
+.skillContainer{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr;
@@ -7,7 +7,7 @@
     position: relative;
     top: 64px;
 }
-.aboutPaper{
+.skillsPaper{
     padding-top: 16;
     padding-bottom: 16;
     grid-column: 4/6;
@@ -15,7 +15,34 @@
     width: 600px;
     
 }
-.contentContainer{
+.innerContainer{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+}
+.col1{
+    grid-column: 1/4;
+    grid-row: 1;
+}
+.col2{
+    grid-column: 5/8;
+    grid-row: 1;
+}
+.col3{
+    grid-column: 3/7;
+    grid-row: 2;
+}
+/*
+.paperRoot{
+    padding-top: 16;
+    padding-bottom: 16;
+    grid-column: 4/6;
+    background: rgba(0,0,0,0.8) !important;
+    width: 600px;
+    
+}
+.leftContainer{
     display: block;
 }
 .mainTitle{
@@ -41,3 +68,4 @@
     border-radius: 20px;
     float: left;
 }
+*/

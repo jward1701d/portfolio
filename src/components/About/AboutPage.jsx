@@ -9,12 +9,12 @@ const image= require('./selfie2.jpg');
 export default function AboutPage() {
   return (
     <div className="aboutContainer">
-      <Paper className="paperRoot" elevation={4}>
+      <Paper className="aboutPaper" elevation={4}>
         <Typography variant="headline" component="h1" className="mainTitle">
           About Me
         </Typography>
         <div className="contentContainer">
-          <img className="image" src={image} />
+          <img className="image" src={image} alt="James Ward"/>
           <Typography variant="headline" component="h3" className="subTitle">
             History
           </Typography>

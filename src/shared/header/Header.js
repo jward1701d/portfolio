@@ -69,7 +69,7 @@ class Header extends Component {
         )
         return(
           
-                <AppBar position="sticky" className={classes.navbar}>
+                <AppBar position="fixed" className={classes.navbar}>
                     <Toolbar>
                         <IconButton onClick={this.toggleDrawer(true)} className={classes.menuButton}>
                             <MenuIcon />

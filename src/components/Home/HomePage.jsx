@@ -14,7 +14,7 @@ class HomePage extends Component {
           <h3>- Game Designer / Programmer</h3>
         </div>
         <div className="right">
-          <img src={photo}/>
+          <img src={photo} alt="James Ward"/>
         </div>
       </div>
     );
