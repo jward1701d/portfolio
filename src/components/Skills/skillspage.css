@@ -1,38 +1,16 @@
-.skillContainer{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
-    position: relative;
-    top: 64px;
+.subTitle{
+    margin: 20px;
+    font-size: 1.55em !important;
+    color:rgba(216, 177, 49, 0.90) !important;
+    text-decoration: underline;
+    padding-bottom: 10px;
 }
-.skillsPaper{
-    padding-top: 16;
-    padding-bottom: 16;
-    grid-column: 4/6;
-    background: rgba(0,0,0,0.8) !important;
-    width: 600px;
-    
+.list{
+    color:rgba(216, 177, 49, 0.90) !important;
+    list-style: none;
+    font-size: 1.25em;
 }
-.innerContainer{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-}
-.col1{
-    grid-column: 1/4;
-    grid-row: 1;
-}
-.col2{
-    grid-column: 5/8;
-    grid-row: 1;
-}
-.col3{
-    grid-column: 3/7;
-    grid-row: 2;
-}
+
 /*
 .paperRoot{
     padding-top: 16;

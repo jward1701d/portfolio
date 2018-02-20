@@ -8,11 +8,14 @@ body{
 }
 #root{
  
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.9);
 }
 .pageTitle{
   font-size: 2.5em !important;
   color:rgba(216, 177, 49, 0.90) !important;
   text-decoration: underline;
+}
+.background{
+  background: rgba(0,0,0,0.5);
 }
 
