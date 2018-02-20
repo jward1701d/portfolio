@@ -1,43 +1,10 @@
-.aboutContainer{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
-    position: relative;
-    top: 64px;
-}
-.aboutPaper{
-    padding-top: 16;
-    padding-bottom: 16;
-    grid-column: 4/6;
-    background: rgba(0,0,0,0.8) !important;
-    width: 600px;
-    
-}
-.contentContainer{
-    display: block;
-}
-.mainTitle{
-    padding-left: 10px;
-    padding-top: 5px;
-    font-size: 1.75em !important;
-    color:rgba(216, 177, 49, 0.90) !important;
-    text-decoration: underline;
-}
-.subTitle{
-    font-size: 1.25em !important;
-    color:rgba(216, 177, 49, 0.90) !important;
-    text-decoration: underline;
-    padding-bottom: 10px;
-}
-.content{
-    padding: 0 10px 10px 10px;
-    color:rgba(216, 177, 49, 0.90) !important;
-}
 .image{
     padding: 10px 15px;
     width: 25%;
     border-radius: 20px;
     float: left;
+}
+
+p{
+    color: rgba(216, 177, 49, 0.90);
 }

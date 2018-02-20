@@ -3,13 +3,16 @@
   margin: 0;
   padding: 0;
 }
-#root{
-  background: rgba(0,0,0,0.8);
-}
-html{
+body{
    background: url('./components/background2.jpeg') no-repeat fixed center;
 }
-body {
-    font-family: 'Roboto', sans-serif;
-  }
+#root{
+ 
+  background: rgba(0,0,0,0.8);
+}
+.pageTitle{
+  font-size: 2.5em !important;
+  color:rgba(216, 177, 49, 0.90) !important;
+  text-decoration: underline;
+}
 

@@ -7,3 +7,11 @@
     position: relative;
     top: 64px;
 }
+.ProjectsPage-card-102{
+    background: #000 !important;
+    color: rgba(216, 177, 49, 0.90) !important;
+    border: 1px solid rgba(216, 177, 49, 0.90);
+}
+.ProjectsPage-card-102, h2, p{
+    color: rgba(216, 177, 49, 0.90) !important;
+}
