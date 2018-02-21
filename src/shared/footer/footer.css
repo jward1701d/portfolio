@@ -3,7 +3,7 @@
     background: rgba(0,0,0,0.85);
     color: #fff;
     text-align: right;
-    position: absolute;
+    position: fixed;
     bottom: 0;    
     border-top: rgba(216, 177, 49, 1) solid 2px;
 }

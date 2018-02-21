@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import {
     Collapse,
     Navbar,
@@ -37,16 +38,16 @@ import './header.css';
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem className="navlinks">
-                  <NavLink href="/">Home</NavLink>
+                  <NavLink tag={Link} to="/">Home</NavLink>
                 </NavItem>
                 <NavItem className="navlinks">
-                  <NavLink href="/about">About</NavLink>
+                  <NavLink tag={Link} to="/about">About</NavLink>
                 </NavItem>
                 <NavItem className="navlinks">
-                  <NavLink href="/skills">Skills</NavLink>
+                  <NavLink tag={Link} to="/skills">Skills</NavLink>
                 </NavItem>
                 <NavItem className="navlinks">
-                  <NavLink href="/projects">Projects</NavLink>
+                  <NavLink tag={Link} to="/projects">Projects</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

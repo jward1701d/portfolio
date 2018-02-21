@@ -6,7 +6,7 @@ const image= require('./selfie2.jpg');
 
 export default function AboutPage() {
   return (
-    <div className="row background">
+    <div className="row superContainer">
       <div className="col-12">
         <h1 className="pageTitle">About</h1>
         <img className="image" src={image} alt="James Ward"/>

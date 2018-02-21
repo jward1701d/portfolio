@@ -4,7 +4,7 @@ import './skillspage.css';
 
 export default function SkillsPage() {
   return (
-    <div className="row background">
+    <div className="row superContainer">
     <div className="col-12">
       <h1 className="pageTitle">Skills</h1>
       </div>

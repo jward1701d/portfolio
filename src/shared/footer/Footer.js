@@ -14,6 +14,7 @@ class Footer extends Component {
           <div className="col-md-5 col-5  social-links">
             <Link target="_blank" to='https://www.linkedin.com/in/jward1701d/'><span className="social"><i className="fab fa-linkedin-in"/></span></Link>
             <Link target="_blank" to='https://github.com/jward1701d'><span className="social"><i className="fab fa-github"/></span></Link>
+            
           </div>
         </div>
       </div>

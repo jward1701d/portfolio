@@ -4,18 +4,14 @@
   padding: 0;
 }
 body{
-   background: url('./components/background2.jpeg') no-repeat fixed center;
+   background: url('./components/background3.png') no-repeat fixed center;
 }
-#root{
- 
-  background: rgba(0,0,0,0.9);
-}
+
 .pageTitle{
   font-size: 2.5em !important;
   color:rgba(216, 177, 49, 0.90) !important;
   text-decoration: underline;
+  margin-bottom: 20px;
 }
-.background{
-  background: rgba(0,0,0,0.5);
-}
+
 
