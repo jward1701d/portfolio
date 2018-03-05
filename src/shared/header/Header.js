@@ -31,8 +31,7 @@ import './header.css';
       return (
         <div>
           <Navbar className="navbar-custom"expand="md">
-            <NavbarBrand className="logo">
-            <NavLink tag={Link} to="/">JamesOWard.com</NavLink>
+            <NavbarBrand className="logo" tag={Link} to="/">JamesOWard.com
             </NavbarBrand>
             <NavbarToggler className="navlinks" onClick={this.toggle} >
                 <FontAwesome name="bars"/>
