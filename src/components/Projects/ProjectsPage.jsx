@@ -13,6 +13,7 @@ const projects = {
       name:'Coalfield Connections',
       image: require('./static/images/cc/cc-main-alt.png'),
       description:'This was a website created for a local magazine company. The magazine serviced the coal industry and served as a yellow pages for coal owners and operators.',
+      linkTo:'/projects/web/coalfield',
     },
     {
       id: 1,

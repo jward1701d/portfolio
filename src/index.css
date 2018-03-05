@@ -13,5 +13,10 @@ body{
   text-decoration: underline;
   margin-bottom: 20px;
 }
-
+.footerPadding{
+  margin-bottom: 50px;
+}
+.spacer{
+  margin-bottom: 20px;
+}
 

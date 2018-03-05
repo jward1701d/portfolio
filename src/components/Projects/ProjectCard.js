@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { Card, 
          CardImg, 
          CardText, 
@@ -17,7 +18,13 @@ export default function ProjectCard(props)
             <CardBody>
             <CardTitle>{props.data.name}</CardTitle>
             <CardText>{props.data.description}</CardText>
-            <Button color= "primary" disabled >Read More</Button>
+            {props.data.linkTo ? (
+            <Link to={props.data.linkTo}>
+              <Button color= "primary">Read More</Button>
+            </Link>
+           ):
+          ( <Button color= "primary" disabled >Read More</Button> )
+            }
             </CardBody>
         </Card>
       </div>
