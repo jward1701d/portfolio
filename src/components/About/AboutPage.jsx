@@ -33,13 +33,6 @@ export default function AboutPage() {
              Microsoft’s ASP.NET Core. While I am by no means a master of any of these development stacks I 
              have general understanding of them and some basic tutorial experience with them. 
         </p>
-        <p>
-        Since that time I have complete my degree and found an interest in web development. 
-             I have undertaken and completed a few freelance projects which I really enjoyed working on. 
-             I have continued to dabble in modern web development stack such as MEAN and MERN as well as 
-             Microsoft’s ASP.NET Core. While I am by no means a master of any of these development stacks I 
-             have general understanding of them and some basic tutorial experience with them. 
-        </p>
       </div>
     </div>
   );
